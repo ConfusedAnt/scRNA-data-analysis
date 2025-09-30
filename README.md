@@ -9,7 +9,7 @@ Acute lung injury (ALI) induced by lipopolysaccharide (LPS) involves complex rem
 ### Graphical abstract
 Integration of scRNA-seq and bulk RNA-seq revealed pathogenic immune subpopulations and regulatory genes in LPS-induced ALI. Key findings were supported by qPCR and ELISA, suggesting that Clec4e may act through the Syk–NF-κB pathway to mediate macrophage inflammatory responses.
 
-![FEAOF](./docs/Graphical abstract.png)
+![scRNA-data-analysis](./docs/Graphical abstract.png)
 
 
 
@@ -27,7 +27,8 @@ The single-cell RNA-seq datasets processed during the current study are availabl
 The single-cell RNA-seq and bulk RNA-seq datasets analyzed during the current study are available in the [GSE276682, GSE292681 and GSE193876]
 
 ```
----- 1_ bulk_pheno_data/Step1. bulk_pheno.ipynb
+---- 1_ bulk_pheno_data
+  ---- Step1. bulk_pheno.ipynb
 ---- 2_Scissor_pheno/step2. Scissor_pheno.ipynb
 ---- 3_cellchat/step3. Run_cellchat.ipynb & run_cell_chat.r
 ---- 4_monocle3/Step1. bulk_pheno.ipynb
