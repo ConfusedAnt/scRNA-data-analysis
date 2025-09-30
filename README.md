@@ -11,7 +11,17 @@ Integration of scRNA-seq and bulk RNA-seq revealed pathogenic immune subpopulati
 
 ![scRNA-data-analysis](./docs/Graphical_abstract.png)
 
+### Installation
+```bash
+# Install micromamba
+curl -L https://micro.mamba.pm/install.sh | bash
+source ~/.bashrc
 
+# Install Base Packages 
+micromamba create -n R4.4.3 jupyter r-base=4.4.3 r-irkernel r-seurat=4.4.0  -c conda-forge -c bioconda -c r -y
+micromamba activate R4.4.3
+jupyter kernelspec list
+```
 
 ### ScRNA-seq Processing
 
