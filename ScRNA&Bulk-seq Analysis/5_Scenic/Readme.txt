@@ -5,7 +5,6 @@ wget -c https://resources.aertslab.org/cistarget/tf_lists/allTFs_mm.txt
 micromamba create -n pyscenic python=3.10 -y
 micromamba activate pyscenic
 
-
 micromamba install -c conda-forge pyarrow
 micromamba install -y -c anaconda cytoolz
 pip install scanpy -i https://pypi.tuna.tsinghua.edu.cn/simple
@@ -14,6 +13,12 @@ pip install pyscenic  -i https://pypi.tuna.tsinghua.edu.cn/simple
 pip install umap -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 pip install distributed==2023.12.1（如果报错TypeError: Must supply at least one delayed object）
+
+
+install.package("BiocManager")
+BiocManager::install(c("AUCell", "RcisTarget","GENIE3","zoo", "mixtools", "rbokeh","DT", "NMF", "pheatmap", "R2HTML", "Rtsne","doMC", "doRNG","scRNAseq"))
+devtools::install_github("aertslab/SCopeLoomR", build_vignettes = TRUE)
+devtools::install_github("aertslab/SCENIC")
 
 
 
