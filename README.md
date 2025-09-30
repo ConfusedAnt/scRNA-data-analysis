@@ -17,17 +17,17 @@ Integration of scRNA-seq and bulk RNA-seq revealed pathogenic immune subpopulati
 curl -L https://micro.mamba.pm/install.sh | bash
 source ~/.bashrc
 
-# Install Base Packages 
+# Install Processing Packages 
 micromamba create -n R4.4.3 jupyter r-base=4.4.3 r-irkernel r-seurat=4.4.0  -c conda-forge -c bioconda -c r -y
 micromamba activate R4.4.3
 jupyter kernelspec list
+
+# Install of Analysis Packages in the Readme.txt file under each subdirectory of the ScRNA&Bulk-seq Analysis directory
 ```
 
 ### ScRNA-seq Processing
 
-The single-cell RNA-seq datasets processed during the current study are available in the [GSE276682, GSE292681]
-
-The data is organized under the `1.10X_files/matrix/` directory.  
+The single-cell RNA-seq datasets processed during the current study are available in the [GSE276682, GSE292681]. The data is organized under the `1.10X_files/matrix/` directory.  
 Each dataset (e.g., `GSM8504078`) includes the following files:
 ```
 1.10X_files/
