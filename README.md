@@ -22,7 +22,8 @@ micromamba create -n R4.4.3 jupyter r-base=4.4.3 r-irkernel r-seurat=4.4.0  -c c
 micromamba activate R4.4.3
 jupyter kernelspec list
 
-# Install of Analysis Packages in the Readme.txt file under each subdirectory of the ScRNA&Bulk-seq Analysis directory
+# Install of Analysis Packages
+The Readme.txt file under each subdirectory of the ScRNA&Bulk-seq Analysis directory
 ```
 
 ### ScRNA-seq Processing
@@ -50,18 +51,26 @@ The single-cell RNA-seq and bulk RNA-seq datasets analyzed during the current st
 ```
 ---- 1_ bulk_pheno_data
   ---- Step1. bulk_pheno.ipynb
+
 ---- 2_Scissor_pheno
   ---- step2. Scissor_pheno.ipynb
+  ---- Readme.txt
+
 ---- 3_cellchat
   ---- step3. Run_cellchat.ipynb
   ---- run_cell_chat.r
+  ---- Readme.txt
+
 ---- 4_monocle3
   ---- Step1. bulk_pheno.ipynb
+  ---- Readme.txt
+
 ---- 5_Scenic
   ---- Step5_1. scRNA_for_scenic.ipynb
   ---- Step5_2. scenic_mouse.bash
   ---- Step5_3. R_Vis.ipynb
   ---- Readme.txt
+
 ---- 6_Bulk_RNAseq
   ---- Step6. Bulk_RNAseq_pro.ipynb
 ```
