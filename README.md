@@ -27,6 +27,16 @@ jupyter kernelspec list
 
 The single-cell RNA-seq datasets processed during the current study are available in the [GSE276682, GSE292681]
 
+The data is organized under the `1.10X_files/matrix/` directory.  
+Each dataset (e.g., `GSM8504078`) includes the following files:
+
+1.10X_files/
+└── matrix/
+└── GSM8504078/
+├── barcodes.tsv.gz # Cell barcodes
+├── features.tsv.gz # Gene/feature annotations
+└── matrix.mtx.gz # Sparse expression matrix
+
 ```
 ---- Step1.Read_10X_data.ipynb
 ---- Step2.process.ipynb
