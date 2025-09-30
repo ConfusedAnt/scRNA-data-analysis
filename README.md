@@ -6,19 +6,20 @@ For SCENIC analysis, the required files—including mouse feather files, motif2t
 
 
 
-# FEAOF
+# scRNA-data-analysis
 
-This repository contains the code for the paper: [**FEAOF: A Transferable Framework Applied to Prediction of hERG-Related Cardiotoxicity**]. 
+This repository contains the code for the paper: [**Clec4e Potentially Mediates Macrophage Inflammatory Responses in LPS-Induced Lung Injury via Syk–NF-κB Signaling**]. 
 
 ## Introduction
 
-Inhibition of the hERG channel by drug molecules can lead to severe cardiac toxicity, resulting in the withdrawal of many approved drugs from the market or halting their development in later stages. This underscores the urgent need to address this issue. Therefore, evaluating hERG blocking activity during drug development is crucial. In this study, we propose a novel framework for **feature extraction and aggregation optimization (FEAOF)**, which primarily consists of a feature extraction module and an aggregation optimization module. The model integrates ligand features such as molecular fingerprints, molecular descriptors, and molecular graphs, along with interaction features of ligand-receptor complexes. Based on this integration, we further optimize the algorithmic framework to achieve precise predictions of compounds cardiac toxicity. We established two independent test sets with significant structural differences from the training data to rigorously assess the model's predictive capability. The results demonstrate that the FEAOF model exhibits strong robustness compared to seven baseline models, with AUC, F1, and SN values of approximately 83%, 67%, and 76%, respectively. Importantly, **this model can be easily adapted for other drug-target interaction prediction tasks**. It is made available as open source under the permissive MIT license at https://github.com/ConfusedAnt/FEAOF.
+Acute lung injury (ALI) induced by lipopolysaccharide (LPS) involves complex remodeling of the lung microenvironment. Using single-cell RNA sequencing, we mapped the cellular landscape of LPS-induced lung injury and identified substantial shifts in cellular composition compared with healthy lungs. Refined clustering and phenotype-linked subset analysis, together with CellChat-based cell–cell communication mapping, revealed that macrophage subsets, particularly Macrophage_c2, c9, and c10, act as primary recipients of intercellular signals, highlighting their central role in coordinating immune responses. Pseudotime analysis revealed that Macrophage_c2 exhibits three distinct differentiation states, reflecting its functional plasticity during lung injury. SCENIC and bulk RNA-seq integration identified Clec4e as a key functional gene specifically enriched in Macrophage_c2. In vitro validation via qPCR and ELISA supported a potential role for Clec4e in mediating macrophage inflammatory responses, potentially through activation of the Syk–NF-κB signaling pathway. Collectively, this study provides a comprehensive single-cell atlas of LPS-induced ALI, delineates macrophage-centered intercellular communication and dynamic polarization, and identifies Clec4e as a promising target for further mechanistic and therapeutic investigation. 
 
-### FEAOF Architecture
+### Graphical abstract
+Integration of scRNA-seq and bulk RNA-seq revealed pathogenic immune subpopulations and regulatory genes in LPS-induced ALI. Key findings were supported by qPCR and ELISA, suggesting that Clec4e may act through the Syk–NF-κB pathway to mediate macrophage inflammatory responses.
 
 ![FEAOF](./docs/Architecture.png)
 
-Overall architecture of the proposed FEAOF. It comprises two components: Feature Extraction and Aggregation Optimization. The feature extraction module focuses on characterizing the structures of both ligands and complexes. The aggregation optimization module is dedicated to integrating the characterizations of these two structural types, optimizing to obtain a comprehensive representation of the complex for property prediction.
+
 
 ### Raw and Split Data
 
