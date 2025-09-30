@@ -12,6 +12,7 @@ Integration of scRNA-seq and bulk RNA-seq revealed pathogenic immune subpopulati
 ![scRNA-data-analysis](./docs/Graphical_abstract.png)
 
 ### Installation
+
 ```bash
 # Install micromamba
 curl -L https://micro.mamba.pm/install.sh | bash
@@ -46,7 +47,8 @@ Each dataset (e.g., `GSM8504078`) includes the following files:
 ```
 ### ScRNA&Bulk-seq Analysis
 
-The single-cell RNA-seq and bulk RNA-seq datasets analyzed during the current study are available in the [GSE276682, GSE292681 and GSE193876]
+The bulk RNA-seq datasets analyzed in the current study are available in [GSE193876]. 
+The following Jupyter notebooks include the Scissor, CellChat, Monocle3, and SCENIC analyses, along with other relevant code.
 
 ```
 ---- 1_ bulk_pheno_data
@@ -75,5 +77,6 @@ The single-cell RNA-seq and bulk RNA-seq datasets analyzed during the current st
   ---- Step6. Bulk_RNAseq_pro.ipynb
 ```
 
+### Validation
 
-
+![scRNA-data-analysis](./docs/Graphical_abstract.png)
