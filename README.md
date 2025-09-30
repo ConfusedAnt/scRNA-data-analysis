@@ -50,6 +50,7 @@ The single-cell RNA-seq and bulk RNA-seq datasets analyzed during the current st
   ---- Step5_1. scRNA_for_scenic.ipynb
   ---- Step5_2. scenic_mouse.bash
   ---- Step5_3. R_Vis.ipynb
+  ---- Readme.txt
 ---- 6_Bulk_RNAseq
   ---- Step6. Bulk_RNAseq_pro.ipynb
 ```
